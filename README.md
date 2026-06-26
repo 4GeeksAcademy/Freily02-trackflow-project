@@ -1,5 +1,17 @@
 # HTML Hello
 
+## Run Locally In Codespaces (npx)
+
+If you are working in GitHub Codespaces, you can run this project with Node and npx instead of Python:
+
+```bash
+npx http-server . -p 8000
+```
+
+Then open the forwarded port `8000` from the Ports panel in Codespaces.
+
+This command serves your current folder as a static site and is a simple alternative to `python3 server.py`.
+
 The most basic boilerplate for any 4Geeks Academy student, start your very first website from scratch.
 
 > There is a video tutorial on [how to use this template to create your very first website here](https://youtu.be/dfbDCMu_p-0).

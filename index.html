@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,151 +7,274 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "DeliveryService",
+            "name": "WeeGoo",
+            "url": "https://weegoo.com",
+            "description": "Last-mile delivery service for e-commerce brands with real-time tracking and regional coverage.",
+            "areaServed": {
+                "@type": "Place",
+                "name": "Urban and suburban routes"
+            },
+            "email": "ventas@weegoo.com",
+            "telephone": "+1-809-555-0147",
+            "slogan": "Last-mile delivery for brands that move fast"
+        }
+    </script>
 </head>
-<body>
+<body class="m-0 box-border bg-[radial-gradient(circle_at_top_left,rgba(255,106,61,0.12),transparent_30%),linear-gradient(180deg,#fff8ef_0%,#f3ede5_100%)] font-[Manrope] leading-[1.6] text-[#101010]">
 
-    <header>
-        <div class="logo">Wee<span>Goo</span></div>
-        <nav>
-            <a href="#services">Solutions</a>
-            <a href="#coverage">Coverage</a>
-            <a href="#tracking">Tracking</a>
-            <a href="#contact">Contact</a>
+    <header class="sticky top-0 z-[100] flex flex-col items-center justify-between gap-4 border-b border-[rgba(16,16,16,0.06)] bg-[rgba(255,250,243,0.82)] px-[5%] py-[18px] backdrop-blur-[14px] min-[721px]:flex-row min-[721px]:gap-0 min-[721px]:px-[8%] min-[721px]:py-[22px]">
+        <div class="font-[Space_Grotesk] text-[1.55rem] font-bold tracking-[-0.04em]">Wee<span class="text-[#ff6a3d]">Goo</span></div>
+        <nav class="flex flex-wrap justify-center gap-y-3 gap-x-[18px] min-[721px]:block">
+            <a href="#services" class="ml-0 font-semibold text-[#101010] no-underline transition-colors duration-300 hover:text-[#ff6a3d] min-[721px]:ml-5">Solutions</a>
+            <a href="#coverage" class="ml-0 font-semibold text-[#101010] no-underline transition-colors duration-300 hover:text-[#ff6a3d] min-[721px]:ml-5">Coverage</a>
+            <a href="#tracking" class="ml-0 font-semibold text-[#101010] no-underline transition-colors duration-300 hover:text-[#ff6a3d] min-[721px]:ml-5">Tracking</a>
+            <a href="#contact" class="ml-0 font-semibold text-[#101010] no-underline transition-colors duration-300 hover:text-[#ff6a3d] min-[721px]:ml-5">Contact</a>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <p class="eyebrow">Last-mile delivery for brands that move fast</p>
-            <h1>WeeGoo powers premium delivery for e-commerce brands that need real speed.</h1>
-            <p>WeeGoo combines routing technology, local operators, and live visibility so every package arrives with a polished brand experience.</p>
-            <div class="hero-actions">
-                <a href="#contact" class="btn-primary">Talk to sales</a>
-                <a href="#tracking" class="btn-secondary">Track order</a>
+    <section class="grid min-h-[calc(100vh-90px)] grid-cols-1 items-center gap-12 px-[5%] pb-16 pt-12 min-[721px]:px-[8%] min-[721px]:pb-16 min-[721px]:pt-[72px] min-[981px]:grid-cols-[minmax(0,1.2fr)_minmax(320px,0.8fr)]">
+        <div>
+            <p class="mb-[18px] inline-block text-[0.78rem] font-extrabold uppercase tracking-[0.14em] text-[#ff6a3d]">Last-mile delivery for brands that move fast</p>
+            <h1 class="mb-[22px] max-w-[11ch] font-[Space_Grotesk] text-[clamp(3rem,6vw,5.6rem)] leading-[0.94] tracking-[-0.06em]">WeeGoo powers premium delivery for e-commerce brands that need real speed.</h1>
+            <p class="mb-[30px] max-w-[610px] text-[1.08rem] text-[#5f5a54]">WeeGoo combines routing technology, local operators, and live visibility so every package arrives with a polished brand experience.</p>
+            <div class="flex flex-wrap gap-[14px]">
+                <a href="#contact" class="inline-flex min-h-[52px] items-center justify-center rounded-full bg-[#ff6a3d] px-6 py-3 font-extrabold text-white no-underline transition duration-300 hover:-translate-y-0.5 hover:bg-[#e4542c]">Talk to sales</a>
+                <a href="#tracking" class="inline-flex min-h-[52px] items-center justify-center rounded-full border border-[rgba(16,16,16,0.12)] bg-[rgba(255,255,255,0.64)] px-6 py-3 font-extrabold text-[#101010] no-underline transition duration-300 hover:-translate-y-0.5">Track order</a>
             </div>
         </div>
-        <div class="hero-panel">
-            <div class="hero-card hero-card-main">
-                <p class="hero-card-label">On-time delivery</p>
-                <strong>98.4%</strong>
-                <span>Weekly average across urban and suburban routes.</span>
+        <div class="grid gap-[18px]">
+            <div class="flex min-h-[250px] flex-col justify-end rounded-[28px] border border-[rgba(16,16,16,0.06)] bg-[linear-gradient(135deg,rgba(255,106,61,0.18),rgba(255,255,255,0.95)),#ffffff] p-7 shadow-[0_20px_50px_rgba(16,16,16,0.08)] max-[720px]:rounded-[22px] max-[720px]:p-[26px]">
+                <p class="mb-[14px] block text-[0.76rem] font-extrabold uppercase tracking-[0.12em] text-[#5f5a54]">On-time delivery</p>
+                <strong class="font-[Space_Grotesk] text-[clamp(2rem,4vw,3.4rem)] leading-none tracking-[-0.06em]">98.4%</strong>
+                <span class="mt-3 text-[#5f5a54]">Weekly average across urban and suburban routes.</span>
             </div>
-            <div class="hero-card-grid">
-                <div class="hero-card accent-card">
-                    <p class="hero-card-label">Active cities</p>
-                    <strong>24</strong>
+            <div class="grid grid-cols-1 gap-[18px] min-[721px]:grid-cols-2">
+                <div class="rounded-[28px] border border-[rgba(16,16,16,0.06)] bg-[linear-gradient(180deg,#ffd7cb,#fff3ee)] p-7 shadow-[0_20px_50px_rgba(16,16,16,0.08)] max-[720px]:rounded-[22px] max-[720px]:p-[26px]">
+                    <p class="mb-[14px] block text-[0.76rem] font-extrabold uppercase tracking-[0.12em] text-[#5f5a54]">Active cities</p>
+                    <strong class="font-[Space_Grotesk] text-[clamp(2rem,4vw,3.4rem)] leading-none tracking-[-0.06em]">24</strong>
                 </div>
-                <div class="hero-card dark-card">
-                    <p class="hero-card-label">Delivery NPS</p>
-                    <strong>72</strong>
+                <div class="rounded-[28px] border border-[rgba(16,16,16,0.06)] bg-[#171717] p-7 text-white shadow-[0_20px_50px_rgba(16,16,16,0.08)] max-[720px]:rounded-[22px] max-[720px]:p-[26px]">
+                    <p class="mb-[14px] block text-[0.76rem] font-extrabold uppercase tracking-[0.12em] text-[rgba(255,255,255,0.7)]">Delivery NPS</p>
+                    <strong class="font-[Space_Grotesk] text-[clamp(2rem,4vw,3.4rem)] leading-none tracking-[-0.06em]">72</strong>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="metrics-strip">
-        <div>
-            <strong>2h</strong>
-            <span>to activate new routes</span>
+    <section class="grid grid-cols-1 gap-[18px] px-[5%] pb-[72px] min-[721px]:px-[8%] min-[981px]:grid-cols-3">
+        <div class="border-t border-[rgba(16,16,16,0.08)] px-7 py-6">
+            <strong class="block font-[Space_Grotesk] text-[2.5rem] tracking-[-0.06em]">2h</strong>
+            <span class="text-[#5f5a54]">to activate new routes</span>
         </div>
-        <div>
-            <strong>99%</strong>
-            <span>visibility on every package</span>
+        <div class="border-t border-[rgba(16,16,16,0.08)] px-7 py-6">
+            <strong class="block font-[Space_Grotesk] text-[2.5rem] tracking-[-0.06em]">99%</strong>
+            <span class="text-[#5f5a54]">visibility on every package</span>
         </div>
-        <div>
-            <strong>7 days</strong>
-            <span>of operational coverage</span>
-        </div>
-    </section>
-
-    <section id="services" class="services">
-        <div class="section-heading">
-            <p class="eyebrow">Solutions</p>
-            <h2>WeeGoo operations are built to scale without losing control.</h2>
-        </div>
-        <div class="grid">
-            <div class="card">
-                <h3>Last-mile delivery</h3>
-                <p>Flexible routes with same-day and next-day promises for stores, marketplaces, and subscription brands.</p>
-            </div>
-            <div class="card">
-                <h3>Post-purchase experience</h3>
-                <p>Proactive messaging, clear tracking, and more accurate delivery windows for the end customer.</p>
-            </div>
-            <div class="card">
-                <h3>Operational intelligence</h3>
-                <p>A dashboard with zone performance, on-time metrics, incidents, and real-time capacity visibility.</p>
-            </div>
+        <div class="border-t border-[rgba(16,16,16,0.08)] px-7 py-6">
+            <strong class="block font-[Space_Grotesk] text-[2.5rem] tracking-[-0.06em]">7 days</strong>
+            <span class="text-[#5f5a54]">of operational coverage</span>
         </div>
     </section>
 
-    <section id="coverage" class="coverage-section">
-        <div class="coverage-copy">
-            <p class="eyebrow">Coverage</p>
-            <h2>WeeGoo scales regionally with a light and efficient network.</h2>
-            <p>WeeGoo launches new markets with operational playbooks, SLA control, and a consistent experience so your brand keeps a premium standard on every delivery.</p>
-            <ul class="coverage-list">
+    <section id="services" class="scroll-mt-[110px] px-[5%] py-[84px] min-[721px]:px-[8%]">
+        <div class="mb-10 max-w-[760px]">
+            <p class="mb-[18px] inline-block text-[0.78rem] font-extrabold uppercase tracking-[0.14em] text-[#ff6a3d]">Solutions</p>
+            <h2 class="font-[Space_Grotesk] text-[clamp(2rem,4vw,3.4rem)] leading-none tracking-[-0.05em]">WeeGoo operations are built to scale without losing control.</h2>
+        </div>
+        <div class="grid grid-cols-1 gap-[30px] min-[900px]:grid-cols-[repeat(auto-fit,minmax(280px,1fr))]">
+            <div class="rounded-[28px] border border-[rgba(16,16,16,0.06)] bg-[rgba(255,255,255,0.85)] p-8 shadow-[0_14px_30px_rgba(16,16,16,0.05)] transition duration-300 hover:-translate-y-1.5 hover:shadow-[0_22px_40px_rgba(16,16,16,0.1)] max-[720px]:rounded-[22px] max-[720px]:p-[26px]">
+                <h3 class="mb-[15px] text-[1.35rem] text-[#101010]">Last-mile delivery</h3>
+                <p class="text-[#5f5a54]">Flexible routes with same-day and next-day promises for stores, marketplaces, and subscription brands.</p>
+            </div>
+            <div class="rounded-[28px] border border-[rgba(16,16,16,0.06)] bg-[rgba(255,255,255,0.85)] p-8 shadow-[0_14px_30px_rgba(16,16,16,0.05)] transition duration-300 hover:-translate-y-1.5 hover:shadow-[0_22px_40px_rgba(16,16,16,0.1)] max-[720px]:rounded-[22px] max-[720px]:p-[26px]">
+                <h3 class="mb-[15px] text-[1.35rem] text-[#101010]">Post-purchase experience</h3>
+                <p class="text-[#5f5a54]">Proactive messaging, clear tracking, and more accurate delivery windows for the end customer.</p>
+            </div>
+            <div class="rounded-[28px] border border-[rgba(16,16,16,0.06)] bg-[rgba(255,255,255,0.85)] p-8 shadow-[0_14px_30px_rgba(16,16,16,0.05)] transition duration-300 hover:-translate-y-1.5 hover:shadow-[0_22px_40px_rgba(16,16,16,0.1)] max-[720px]:rounded-[22px] max-[720px]:p-[26px]">
+                <h3 class="mb-[15px] text-[1.35rem] text-[#101010]">Operational intelligence</h3>
+                <p class="text-[#5f5a54]">A dashboard with zone performance, on-time metrics, incidents, and real-time capacity visibility.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="coverage" class="grid scroll-mt-[110px] grid-cols-1 items-start gap-8 px-[5%] pb-[84px] min-[721px]:px-[8%] min-[981px]:grid-cols-[minmax(0,1fr)_minmax(300px,420px)]">
+        <div class="py-[42px]">
+            <p class="mb-[18px] inline-block text-[0.78rem] font-extrabold uppercase tracking-[0.14em] text-[#ff6a3d]">Coverage</p>
+            <h2 class="font-[Space_Grotesk] text-[clamp(2rem,4vw,3.4rem)] leading-none tracking-[-0.05em]">WeeGoo scales regionally with a light and efficient network.</h2>
+            <p class="mt-4 text-[#5f5a54]">WeeGoo launches new markets with operational playbooks, SLA control, and a consistent experience so your brand keeps a premium standard on every delivery.</p>
+            <ul class="mt-6 list-disc space-y-[14px] pl-[22px] text-[#5f5a54] marker:text-[#ff6a3d]">
                 <li>Urban micro-hubs designed to reduce delivery times.</li>
                 <li>Dedicated fleet and elastic capacity for peak demand.</li>
                 <li>Operational support for incidents, returns, and retries.</li>
             </ul>
         </div>
-        <div class="coverage-panel">
-            <div class="coverage-stat">
-                <span>+180K</span>
-                <p>monthly deliveries managed with live visibility.</p>
+        <div class="grid gap-[18px] rounded-[28px] bg-[#171717] p-7 text-white max-[720px]:rounded-[22px] max-[720px]:p-[26px]">
+            <div class="border-t-0 py-0">
+                <span class="font-[Space_Grotesk] text-[clamp(2rem,4vw,3.4rem)] leading-none tracking-[-0.06em]">+180K</span>
+                <p class="mt-[10px] text-[rgba(255,255,255,0.72)]">monthly deliveries managed with live visibility.</p>
             </div>
-            <div class="coverage-stat">
-                <span>31 min</span>
-                <p>average resolution time for critical support events.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="tracking" class="tracking-section">
-        <div class="tracking-box">
-            <p class="eyebrow">Tracking</p>
-            <h2>Track your order with WeeGoo's clear and fast delivery experience.</h2>
-            <p>Check your shipment status and receive updates on every package movement.</p>
-            <div class="search-bar">
-                <input type="text" placeholder="Ex: TF-98234-XYZ" disabled>
-                <button type="button">Search</button>
-            </div>
-            <p class="status-text">Current status: <strong>Out for delivery</strong></p>
-        </div>
-        <div class="tracking-side-card">
-            <p class="hero-card-label">What your customer sees</p>
-            <h3>Useful alerts, more accurate ETAs, and the WeeGoo brand experience.</h3>
-            <p>Reduce support tickets with timely notifications and a tracking interface that is easy to understand.</p>
-        </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-        <div class="contact-box">
-            <p class="eyebrow">Contact</p>
-            <h2>Let's talk about your operation with WeeGoo.</h2>
-            <p>Tell us about your volume, cities, and delivery promise. WeeGoo will design an operational proposal for your brand.</p>
-            <div class="contact-grid">
-                <div>
-                    <span>Email</span>
-                    <strong>ventas@weegoo.com</strong>
-                </div>
-                <div>
-                    <span>Phone</span>
-                    <strong>+1 (809) 555-0147</strong>
-                </div>
-                <div>
-                    <span>Hours</span>
-                    <strong>Mon - Sat / 7:00 AM - 9:00 PM</strong>
-                </div>
+            <div class="border-t border-[rgba(255,255,255,0.14)] py-[18px]">
+                <span class="font-[Space_Grotesk] text-[clamp(2rem,4vw,3.4rem)] leading-none tracking-[-0.06em]">31 min</span>
+                <p class="mt-[10px] text-[rgba(255,255,255,0.72)]">average resolution time for critical support events.</p>
             </div>
         </div>
     </section>
 
-    <footer>
+    <section id="tracking" class="grid scroll-mt-[110px] grid-cols-1 items-stretch gap-6 px-[5%] pb-[84px] min-[721px]:px-[8%] min-[981px]:grid-cols-[minmax(0,1fr)_minmax(280px,380px)]">
+        <div class="rounded-[28px] border border-[rgba(16,16,16,0.06)] bg-white p-10 shadow-[0_20px_40px_rgba(16,16,16,0.08)] max-[720px]:rounded-[22px] max-[720px]:p-[26px]">
+            <p class="mb-[18px] inline-block text-[0.78rem] font-extrabold uppercase tracking-[0.14em] text-[#ff6a3d]">Tracking</p>
+            <h2 class="font-[Space_Grotesk] text-[clamp(2rem,4vw,3.4rem)] leading-none tracking-[-0.05em]">Track your order with WeeGoo's clear and fast delivery experience.</h2>
+            <p class="mt-4 text-[#5f5a54]">Check your shipment status and receive updates on every package movement.</p>
+            <div class="my-5 flex rounded-full bg-[#f5f0e9] p-[6px] max-[720px]:grid max-[720px]:grid-cols-1">
+                <input type="text" placeholder="Ex: TF-98234-XYZ" disabled class="flex-1 rounded-full border-none bg-transparent px-4 py-3 outline-none">
+                <button type="button" class="cursor-pointer rounded-full border-none bg-[#101010] px-[22px] font-bold text-white max-[720px]:min-h-12">Search</button>
+            </div>
+            <p class="text-[1.1rem] text-[#101010]">Current status: <strong>Out for delivery</strong></p>
+        </div>
+        <div class="flex flex-col justify-end rounded-[28px] bg-[linear-gradient(180deg,#212121,#0f0f0f)] p-8 text-white max-[720px]:rounded-[22px] max-[720px]:p-[26px]">
+            <p class="mb-[14px] block text-[0.76rem] font-extrabold uppercase tracking-[0.12em] text-[rgba(255,255,255,0.7)]">What your customer sees</p>
+            <h3 class="mb-4 font-[Space_Grotesk] text-[2rem] leading-none tracking-[-0.05em] max-[720px]:text-[1.7rem]">Useful alerts, more accurate ETAs, and the WeeGoo brand experience.</h3>
+            <p class="text-[rgba(255,255,255,0.74)]">Reduce support tickets with timely notifications and a tracking interface that is easy to understand.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="scroll-mt-[110px] px-[5%] pb-[90px] min-[721px]:px-[8%]">
+        <div class="rounded-[28px] border border-[rgba(16,16,16,0.06)] bg-[linear-gradient(135deg,#fff4ee,#fffdf8)] p-[42px] shadow-[0_20px_50px_rgba(16,16,16,0.06)] max-[720px]:rounded-[22px] max-[720px]:p-[26px]">
+            <p class="mb-[18px] inline-block text-[0.78rem] font-extrabold uppercase tracking-[0.14em] text-[#ff6a3d]">Contact</p>
+            <h2 class="font-[Space_Grotesk] text-[clamp(2rem,4vw,3.4rem)] leading-none tracking-[-0.05em]">Let's talk about your operation with WeeGoo.</h2>
+            <p class="mt-4 text-[#5f5a54]">Tell us about your volume, cities, and delivery promise. WeeGoo will design an operational proposal for your brand.</p>
+            <form id="contact-form" novalidate class="mt-7 grid gap-5 rounded-[20px] border border-[rgba(16,16,16,0.08)] bg-white/75 p-6">
+                <div>
+                    <label for="name" class="mb-2 block text-[0.82rem] font-extrabold uppercase tracking-[0.12em] text-[#5f5a54]">Name</label>
+                    <input id="name" name="name" type="text" autocomplete="name" aria-describedby="name-error" aria-invalid="false" class="w-full rounded-xl border border-[rgba(16,16,16,0.14)] bg-white px-4 py-3 text-[#101010] outline-none transition focus:border-[#ff6a3d] focus:ring-2 focus:ring-[#ff6a3d]/20" />
+                    <p id="name-error" class="mt-2 text-sm font-semibold text-[#b3261e]" aria-live="polite"></p>
+                </div>
+                <div>
+                    <label for="email" class="mb-2 block text-[0.82rem] font-extrabold uppercase tracking-[0.12em] text-[#5f5a54]">Email</label>
+                    <input id="email" name="email" type="email" autocomplete="email" aria-describedby="email-error" aria-invalid="false" class="w-full rounded-xl border border-[rgba(16,16,16,0.14)] bg-white px-4 py-3 text-[#101010] outline-none transition focus:border-[#ff6a3d] focus:ring-2 focus:ring-[#ff6a3d]/20" />
+                    <p id="email-error" class="mt-2 text-sm font-semibold text-[#b3261e]" aria-live="polite"></p>
+                </div>
+                <div>
+                    <label for="message" class="mb-2 block text-[0.82rem] font-extrabold uppercase tracking-[0.12em] text-[#5f5a54]">Message</label>
+                    <textarea id="message" name="message" rows="5" aria-describedby="message-error" aria-invalid="false" class="w-full resize-y rounded-xl border border-[rgba(16,16,16,0.14)] bg-white px-4 py-3 text-[#101010] outline-none transition focus:border-[#ff6a3d] focus:ring-2 focus:ring-[#ff6a3d]/20"></textarea>
+                    <p id="message-error" class="mt-2 text-sm font-semibold text-[#b3261e]" aria-live="polite"></p>
+                </div>
+                <p id="form-status" class="text-sm font-semibold text-[#5f5a54]" role="status" aria-live="polite"></p>
+                <button type="submit" class="inline-flex min-h-[52px] w-full items-center justify-center rounded-full bg-[#101010] px-6 py-3 font-extrabold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#2b2b2b] min-[721px]:w-fit">Send message</button>
+            </form>
+            <div class="mt-7 grid grid-cols-1 gap-[18px] min-[981px]:grid-cols-3">
+                <div class="rounded-[20px] bg-[rgba(255,255,255,0.82)] p-[22px]">
+                    <span class="mb-2 block text-[0.82rem] font-extrabold uppercase tracking-[0.12em] text-[#5f5a54]">Email</span>
+                    <strong class="text-[1.05rem]">ventas@weegoo.com</strong>
+                </div>
+                <div class="rounded-[20px] bg-[rgba(255,255,255,0.82)] p-[22px]">
+                    <span class="mb-2 block text-[0.82rem] font-extrabold uppercase tracking-[0.12em] text-[#5f5a54]">Phone</span>
+                    <strong class="text-[1.05rem]">+1 (809) 555-0147</strong>
+                </div>
+                <div class="rounded-[20px] bg-[rgba(255,255,255,0.82)] p-[22px]">
+                    <span class="mb-2 block text-[0.82rem] font-extrabold uppercase tracking-[0.12em] text-[#5f5a54]">Hours</span>
+                    <strong class="text-[1.05rem]">Mon - Sat / 7:00 AM - 9:00 PM</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-[rgba(16,16,16,0.06)] px-5 py-7 text-center text-[0.9rem] text-[#5f5a54]">
         <p>&copy; 2026 WeeGoo. Last-mile operations for growing brands.</p>
     </footer>
+
+    <script>
+        const contactForm = document.getElementById("contact-form");
+        const nameInput = document.getElementById("name");
+        const emailInput = document.getElementById("email");
+        const messageInput = document.getElementById("message");
+        const formStatus = document.getElementById("form-status");
+
+        const fieldConfig = {
+            name: {
+                input: nameInput,
+                errorElement: document.getElementById("name-error"),
+                emptyMessage: "Please enter your name."
+            },
+            email: {
+                input: emailInput,
+                errorElement: document.getElementById("email-error"),
+                emptyMessage: "Please enter your email address.",
+                invalidMessage: "Please enter a valid email address."
+            },
+            message: {
+                input: messageInput,
+                errorElement: document.getElementById("message-error"),
+                emptyMessage: "Please enter your message."
+            }
+        };
+
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        function setFieldError(field, message) {
+            field.input.setAttribute("aria-invalid", "true");
+            field.errorElement.textContent = message;
+        }
+
+        function clearFieldError(field) {
+            field.input.setAttribute("aria-invalid", "false");
+            field.errorElement.textContent = "";
+        }
+
+        function validateField(fieldName) {
+            const field = fieldConfig[fieldName];
+            const value = field.input.value.trim();
+
+            if (!value) {
+                setFieldError(field, field.emptyMessage);
+                return false;
+            }
+
+            if (fieldName === "email" && !emailPattern.test(value)) {
+                setFieldError(field, field.invalidMessage);
+                return false;
+            }
+
+            clearFieldError(field);
+            return true;
+        }
+
+        ["name", "email", "message"].forEach((fieldName) => {
+            fieldConfig[fieldName].input.addEventListener("blur", () => {
+                validateField(fieldName);
+            });
+
+            fieldConfig[fieldName].input.addEventListener("input", () => {
+                if (fieldConfig[fieldName].input.getAttribute("aria-invalid") === "true") {
+                    validateField(fieldName);
+                }
+            });
+        });
+
+        contactForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            formStatus.textContent = "";
+
+            const validationOrder = ["name", "email", "message"];
+            const invalidFields = validationOrder.filter((fieldName) => !validateField(fieldName));
+
+            if (invalidFields.length > 0) {
+                formStatus.textContent = "Please correct the highlighted fields before sending the form.";
+                fieldConfig[invalidFields[0]].input.focus();
+                return;
+            }
+
+            formStatus.textContent = "Thanks! Your message was sent successfully.";
+            contactForm.reset();
+            validationOrder.forEach((fieldName) => clearFieldError(fieldConfig[fieldName]));
+        });
+    </script>
 
 </body>
 </html>
